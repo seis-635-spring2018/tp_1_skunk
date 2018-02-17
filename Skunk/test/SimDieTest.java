@@ -65,7 +65,6 @@ public class SimDieTest
 		assertEquals(1,d.getLastRoll());
 		d.roll();
 		assertEquals(2,d.getLastRoll());
-		
 	}
 	
 	@Test(expected=RuntimeException.class)
@@ -74,5 +73,26 @@ public class SimDieTest
 		SimDie d = new SimDie(new int[] {});
 		
 	}
+	 
+	@Test
+	public void test_length_3_seq_6_rolls()
+	{ 
+		int[] iArray = {1,2,3};
+		SimDie d = new SimDie(iArray);	
+		d.roll();
+		assertEquals(1,d.getLastRoll());
+		d.roll();
+		assertEquals(2,d.getLastRoll());
+		d.roll();
+		assertEquals(3,d.getLastRoll());
+		
+		d.roll();
+		assertEquals(1,d.getLastRoll());
+		d.roll();
+		assertEquals(2,d.getLastRoll());
+		d.roll();
+		assertEquals(3,d.getLastRoll());	
+	}
+
 
 }

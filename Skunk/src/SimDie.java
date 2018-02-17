@@ -18,13 +18,13 @@ public class SimDie
 		if (nextPos < seq.length)
 		{
 			lastRoll = seq[nextPos];
-			nextPos++;
 		}
 		else
 		{
 			nextPos = 0;
 			lastRoll = seq[nextPos];
-		}
+		} 
+		nextPos++;
 		
 	}
 	
