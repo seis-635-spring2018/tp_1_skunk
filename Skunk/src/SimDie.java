@@ -15,15 +15,11 @@ public class SimDie
 	
 	public void roll()
 	{
-		if (nextPos < seq.length)
-		{
-			lastRoll = seq[nextPos];
-		}
-		else
+		if (nextPos >= seq.length)
 		{
 			nextPos = 0;
-			lastRoll = seq[nextPos];
 		} 
+		lastRoll = seq[nextPos];
 		nextPos++;
 		
 	}
