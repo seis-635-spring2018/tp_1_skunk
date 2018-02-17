@@ -56,7 +56,7 @@ public class SimDieTest
 	
 	@Test
 	public void test_length_2_seq_3_rolls()
-	{
+	{ 
 		int[] iArray = {2,1}	;
 		SimDie d = new SimDie(iArray);	
 		d.roll();
