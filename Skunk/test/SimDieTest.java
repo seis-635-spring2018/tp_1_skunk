@@ -22,8 +22,8 @@ public class SimDieTest
 		
 		int result = d.getLastRoll();
 		
-		assertEquals(1,result);
-		
+		assertEquals("first roll is 1", 1,result);
+	
 	}
 
 	@Test
@@ -92,6 +92,11 @@ public class SimDieTest
 		assertEquals(2,d.getLastRoll());
 		d.roll();
 		assertEquals(3,d.getLastRoll());	
+	}
+	
+	public static void main(String[] args)
+	{
+		
 	}
 
 

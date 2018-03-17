@@ -22,6 +22,7 @@ public class SimDie
 		lastRoll = seq[nextPos];
 		nextPos++;
 		
+		
 	}
 	
 	public int getLastRoll()
